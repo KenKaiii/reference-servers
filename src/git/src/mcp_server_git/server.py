@@ -1,3 +1,8 @@
+import os
+
+port = int(os.environ.get("PORT", 3000))
+app.run(host='0.0.0.0', port=port)
+
 import logging
 from pathlib import Path
 from typing import Sequence
